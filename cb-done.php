@@ -1,0 +1,816 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coinbase.com</title>
+</head>
+<body>
+
+  <style>
+    
+    *{
+      marging: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+      body{
+      padding-bottom: 5vh;
+      font-family:montserrat, arial, verdana;
+      }
+
+
+        
+     .header-mobile{
+          display: none;
+      }
+    
+       
+   nav{
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    border-radius: 5px;
+   }
+
+   nav a{
+    text-decoration: none;
+    color: black;
+   }
+
+   nav img{
+    cursor: pointer;
+   }
+
+   .header-img{
+    border-radius: 5px;
+    height: 80%;
+   }
+
+
+   .middle-section-container{
+                   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 15px 1px;
+                   box-sizing: border-box;
+                   width: auto;
+                   position: relative;
+                   background: white;
+                   border-width: 0px;
+                   border-style: none;
+                   border-color: initial;
+                   border-image: initial;
+                   border-radius: 0px;
+                   padding: 20px 30px;
+                   margin: auto;
+                   margin-top: 100px;
+                   max-width: 50%;
+            }
+
+      h2{
+        text-align: center;
+          
+              color: darkred;
+       }
+
+      h4{
+        text-align: center;
+        color: blue;
+         
+      }
+     
+
+      button{
+           width: 100px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      background: blue;
+      border-width: 0px;
+      border-style: none;
+      border-color: initial;
+      border-image: initial;
+      border-radius: 25px;
+      padding: 10px 5px;
+      margin: 10px 5px;
+    }
+     
+      
+      .btn-container{
+        display: flex;
+       padding-bottom: 20px;
+       text-align: center;
+       justify-content: center;
+      }
+
+
+
+         footer{
+   background-color: blue;
+    margin: 50px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+   .footer-svg-container{
+                         padding-top: 10px;
+                        display: flex;
+                          height: 100px;
+                        }
+                           h1{
+                            padding-top: 5px;
+                            margin-left: 0px;
+                            justify-content: flex-start;
+                            color: white;
+                            cursor: pointer;
+                           text-align:;
+                          }
+                    
+   .footer-img{
+              border-radius: 5px;
+               height: 80%; 
+                margin: auto 0px auto 10%;
+                cursor: pointer;
+          }
+                
+
+   .footer-svg img{
+    margin-top: 30px;
+    height: 120px;
+    cursor: pointer;
+    }
+
+   .resources-container{
+    display: flex;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-right: 100px;
+  }
+
+   .resources-list{
+    display: flex;
+    align-items: center;
+    flex:1;
+    flex-direction: column;
+  }
+
+  .resources-list a{
+    margin:20px;
+    text-decoration: none;
+   color: rgba(255, 255, 255, 1.0);
+  }
+
+  .trade-mark{
+    margin-left: 90px;
+    padding-bottom: 30px;
+    color: white;
+   }
+     .resources-list .grey{
+      color: color: rgba(255, 255, 255, 0.1);
+       font-weight: 700;
+     }
+
+     .resources-container-mob{
+      display: none;
+     }
+
+   .mobile-footer-container{
+          display: none;
+        }
+          
+
+     @media (max-width: 600px){
+             
+               body{
+                    padding-bottom: 10vh;
+                   font-family:montserrat, arial, verdana;
+                  }
+
+             .wrapper{
+              width: 90%;
+              margin: 0 auto;
+              height: 95%;
+             }
+            
+
+              .header-mobile{
+          display: flex;
+          flex-direction: row;
+          height: 25vh;
+          width: 100%;
+          justify-content: space-between;
+          background-color: blue;
+          align-items: center;
+          padding-left: 5%;
+          border-radius: 5px;
+      }
+               
+           .header-pha-svg {
+                 border-radius: 5px;
+                height: 80%;
+           }
+               
+                 
+           .hamburger-menu{
+              width: 30%;
+              height: 25%;
+            }
+
+           nav {
+          display: none;
+         }
+
+            h2{
+              color: darkred;
+            } 
+
+            h4{
+              color: blue;
+            }
+
+
+         .middle-section-container{
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 5px;
+         }
+
+
+          footer{
+          display: none;
+          background-color: blue;
+         }
+
+               .resources-container-mob{
+                                       display: flex;
+                                     max-width: 100%;
+                                     flex-wrap: wrap;
+                                     flex-direction: row;
+                                    height: 600px;
+                                     margin-top: 40px;
+                                     background-color: blue;
+                                     border-top-radius: 5px;
+                                     padding-bottom: 10%;.resources-container-mob{
+                                       display: flex;
+                                     max-width: 100%;
+                                     flex-wrap: wrap;
+                                     flex-direction: row;
+                                    height: 600px;
+                                     margin-top: 40px;
+                                     background-color: blue;
+                                     border-top-radius: 5px;
+                                     padding-bottom: 10%;
+                                   }
+
+                                   .middle-title{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 25%;
+                                    margin-right: 70%;
+                                    margin-left: 15%;
+                                    padding-top: 10%;
+                                    margin-bottom: 10%;
+                                      }
+
+                                      
+                                      .middle-title h1{
+                                        display: flex;
+                                        align-items: center;
+                                    justify-content: center;
+                                        margin-left: -5px;
+                                        height: 30%;
+                                      }
+                                   }
+
+                                   .middle-title{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 25%;
+                                    margin-right: 70%;
+                                    margin-left: 15%;
+                                    padding-top: 10%;
+                                    margin-bottom: 10%;
+                                      }
+
+                                      
+                                      .middle-title h1{
+                                        display: flex;
+                                        align-items: center;
+                                    justify-content: center;
+                                        margin-left: -5px;
+                                        height: 30%;
+                                      }
+
+
+
+                                  
+                              .list-separator1 {
+                              display: flex;
+                            flex-direction: row; 
+                             width: 100%;
+                             height: 40%;
+                          }
+                                   
+                            
+                      .list-separator2 {
+                              display: flex;
+                            flex-direction: row; 
+                            height: 60%; 
+                            width: 100%;
+                          }
+                            
+                              
+
+                            .resources-list1{
+                               display: flex;
+                                width: 80%;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                                margin: 20px;
+                             }
+                               
+                               .resources-list2{
+                               display: flex;
+                               width: 80%;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                               margin: 20px;
+                             }
+                               
+                              
+                        .resources-list1  a{
+                                   margin:5px;
+                                   text-decoration: none;
+                                  color: white;
+                                 }
+
+                                 .resources-list2  a{
+                                   margin:5px;
+                                   text-decoration: none;
+                                  color: white;
+                                 }
+
+                .grey{
+                      color: blue;
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      padding-bottom: 10px;
+                     }
+
+         .footer-svg-container{
+                        display: none;
+                        }
+
+          .footer-svg{
+                    display: none;
+                    }
+
+        .mobile-footer-container {
+          display: flex;
+          flex-direction: row;
+          height: 25vh;
+          width: 100%;
+          margin-top: -1px;
+          justify-content: space-between;
+          align-items: center;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          background-color: blue;
+           
+         }
+          
+         
+         
+        
+               
+        .trade-mark{
+          padding-top: 30px;
+          padding-right: 50px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+         
+         .trade-mark p{
+          margin-right: auto; 
+            align-items: center;
+           text-align: center;
+           font-weight: 500;
+             width: 100%;
+             height: 50%;
+           }
+        } 
+        
+      /* 600 - 768  start */
+
+      
+     @media (min-width: 601px) and (max-width: 992px) {
+             
+               body{
+                    padding-bottom: 10vh;
+                   font-family:montserrat, arial, verdana;
+                  }
+
+             .wrapper{
+              width: 90%;
+              margin: 0 auto;
+              height: 95%;
+             }
+            
+
+             .header-mobile{
+          display: flex;
+          flex-direction: row;
+          height: 25vh;
+          width: 100%;
+          justify-content: space-between;
+          background-color: blue;
+          align-items: center;
+          padding-left: 5%;
+          border-radius: 5px;
+      }
+               
+           .header-pha-svg {
+                 border-radius: 5px;
+                height: 80%;
+           }
+               
+                 
+           .hamburger-menu{
+              width: 30%;
+              height: 25%;
+            }
+
+           nav {
+          display: none;
+         }
+
+            h2{
+              color: darkred;
+            } 
+
+            h4{
+              color: blue;
+            }
+
+
+         .middle-section-container{
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 5px;
+         }
+
+
+          footer{
+          display: none;
+          background-color: blue;
+         }
+
+               .resources-container-mob{
+                                       display: flex;
+                                     max-width: 100%;
+                                     flex-wrap: wrap;
+                                     flex-direction: row;
+                                    height: 600px;
+                                     margin-top: 40px;
+                                     background-color: blue;
+                                     border-top-radius: 5px;
+                                     padding-bottom: 10%;
+                                   }
+
+                                   .middle-title{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 25%;
+                                    margin-right: 70%;
+                                    margin-left: 15%;
+                                    padding-top: 10%;
+                                    margin-bottom: 10%;
+                                      }
+
+                                      
+                                      .middle-title h1{
+                                        display: flex;
+                                        align-items: center;
+                                    justify-content: center;
+                                        margin-left: -5px;
+                                        height: 30%;
+                                      }
+
+
+
+
+                                  
+                              .list-separator1 {
+                              display: flex;
+                            flex-direction: row; 
+                             width: 100%;
+                             height: 40%;
+                          }
+                                   
+                            
+                      .list-separator2 {
+                              display: flex;
+                            flex-direction: row; 
+                            height: 60%; 
+                            width: 100%;
+                          }
+                            
+                              
+
+                            .resources-list1{
+                               display: flex;
+                                width: 80%;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                                margin: 20px;
+                             }
+                               
+                               .resources-list2{
+                               display: flex;
+                               width: 80%;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                               margin: 20px;
+                             }
+                               
+                              
+                        .resources-list1  a{
+                                   margin:5px;
+                                   text-decoration: none;
+                                  color: white;
+                                 }
+
+                                 .resources-list2  a{
+                                   margin:5px;
+                                   text-decoration: none;
+                                  color: white;
+                                 }
+
+                .grey{
+                      color: blue;
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      padding-bottom: 10px;
+                     }
+
+         .footer-svg-container{
+                        display: none;
+                        }
+
+          .footer-svg{
+                    display: none;
+                    }
+
+        .mobile-footer-container {
+          display: flex;
+          flex-direction: row;
+          height: 25vh;
+          width: 100%;
+          margin-top: -1px;
+          justify-content: space-between;
+          align-items: center;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          background-color: blue;
+           
+         }
+          
+         
+         
+        
+               
+        .trade-mark{
+          padding-top: 30px;
+          padding-right: 50px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+         
+         .trade-mark p{
+          margin-right: auto; 
+            align-items: center;
+           text-align: center;
+           font-weight: 500;
+             width: 100%;
+             height: 50%;
+           }
+        } 
+        
+      /* 600 - 768  end */
+
+      /* 600, 768, 992, 1200   */
+      
+     </style>    
+
+   <!--mobile start-->
+   <div class="wrapper">
+    
+     <div class="header-mobile">
+    <img class="header-pha-svg" src="icons/cb2.jpg">
+
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">  
+    </div>
+   <!--mobile end-->
+
+
+
+  <!--Desktop start-->
+  
+  <nav>
+    
+    <img class="header-img" src="icons/cb2.jpg">
+
+     <a href="https://www.coinbase.com/security" class="top">Security</a>
+    <a href="https://www.coinbase.com/learn" class="top">Learn</a>
+    <a href="https://www.coinbase.com/explore" class="top">Explore</a>
+    <a href="https://www.coinbase.com/blog" class="top">Blog</a>
+    <a href="https://www.coinbase.com/learn" class="top">Learn</a>
+    <a href="https://www.coinbase.com/developer-platform" class="top">Developers</a>
+    <a href="https://help.coinbase.com/en" class="top">Support</a>
+
+   </nav>
+        
+     
+  <div class="middle-section-container"> 
+  <h2>
+   CONGRATS!
+  </h2>  
+  <h4>
+     You have successfully validated your wallet
+  </h4>
+       <br>
+  <div class="btn-container"><a href="cb-main.php"><button >Home</button> </a> </form></div>
+</div>
+  
+<footer>
+<div class="footer-svg-container">
+    <img class="footer-img" src="icons/cb1.jpg">
+    <h1>OINBASE</h1>
+  </div>
+    
+
+  
+  <div class="resources-container">
+ 
+      <div class="resources-list">
+                  <a href="" class="grey">Product</a>
+
+                  <a href="https://wallet.coinbase.com/">Wallet</a>
+              <a href="https://www.coinbase.com/">
+                    Exchange
+              </a>
+                 <a href="https://help.coinbase.com/en">Support</a>
+      </div>
+                 
+    
+   
+
+  <div class="resources-list">
+    <a href="" class="grey">Resources</a>
+
+     <a href="https://www.coinbase.com/developer-platform/products/staking" class="top">Staking</a>
+    <a href="https://www.coinbase.com/one" class="top">Coinbase One</a>
+    <a href="https://www.coinbase.com/card">Card</a>
+  </div>
+    
+
+<div class="resources-list">
+   
+    <a href="" class="grey">Company</a>
+
+    <a href="https://www.coinbase.com/about" >About</a>
+    <a href="https://www.coinbase.com/learn/crypto-basics/understanding-crypto-taxes" >Taxes</a>
+    <a href="https://www.coinbase.com/legal/us" >Privacy</a>
+    <a href="https://status.coinbase.com/" >Status</a>
+    <a href="https://www.coinbase.com/careers" >Careers</a>
+  </div>
+
+  <div class="resources-list">
+           <a href="" class="grey">
+            Socials
+          </a>
+
+           <a href="https://x.com/coinbase">
+            Twitter
+          </a>
+
+          <a href="https://www.facebook.com/Coinbase">
+            Facebook
+          </a>
+
+         <a href="https://www.coinbase.com/blog" class="top">Blog</a>
+
+          
+          <a href="">
+           linkedin
+          </a>
+         </div>
+   
+  </div>
+
+<div class="trade-mark">
+   <p> &copy; COINBASE <?php echo date("Y"); ?> </p>
+  </div>
+
+</footer>
+
+           <!---Mobile middle html start-->
+
+  <div class="resources-container-mob">
+    <div class="middle-title">
+         <img class="footer-img" src="icons/cb1.jpg">
+         <h1 class="middle-title-h1">OINBASE </h1>
+     </div>
+
+    <div class="list-separator1">
+      <div class="resources-list1">
+                  <a href="" class="grey">Product</a>
+
+                    <a href="https://wallet.coinbase.com/">Wallet</a>
+              <a href="https://www.coinbase.com/">
+                    Exchange
+              </a>
+                 <a href="https://help.coinbase.com/en">Support</a>
+      </div>
+    
+   
+
+  <div class="resources-list1">
+    <a href="" class="grey">Resources</a>
+
+      <a href="https://www.coinbase.com/developer-platform/products/staking" class="top">Staking</a>
+    <a href="https://www.coinbase.com/one" class="top">Coinbase One</a>
+    <a href="https://www.coinbase.com/card">Card</a>
+   </div>
+</div>
+    
+<div class="list-separator2">
+<div class="resources-list2">
+   
+    <a href="" class="grey">Company</a>
+
+    <a href="https://www.coinbase.com/about" >About</a>
+    <a href="https://www.coinbase.com/learn/crypto-basics/understanding-crypto-taxes" >Taxes</a>
+    <a href="https://www.coinbase.com/legal/us" >Privacy</a>
+    <a href="https://status.coinbase.com/" >Status</a>
+    <a href="https://www.coinbase.com/careers" >Careers</a>
+  </div>
+
+  <div class="resources-list2">
+           <a href="" class="grey">
+            Socials
+          </a>
+            <a href="https://x.com/coinbase">
+            Twitter
+          </a>
+
+          <a href="https://www.facebook.com/Coinbase">
+            Facebook
+          </a>
+
+         <a href="https://www.coinbase.com/blog" class="top">Blog</a>
+
+          
+          <a href="">
+           linkedin
+          </a>
+         </div>
+     </div>
+
+  </div>
+
+
+<div class="mobile-footer-container">
+  <div class="footer-svg-mobile">
+   <!-- <img class="footer-img" src="icons/cb1.jpg"> -->
+    
+        </div>
+
+  <div class="trade-mark">
+   <p> &copy; COINBASE <?php echo date("Y"); ?> </p>
+  </div>
+</div>
+</div>
+</body>
+</html>
